@@ -5,7 +5,9 @@ double fahrenheitACelsius(double f) {
 }
 
 int main() {
-    double tempF = 98.6;
-    std::cout << tempF << " °F equivale a " << fahrenheitACelsius(tempF) << " °C\n";
+    double tempF;
+    std::cout << "Ingresa la temperatura en Fahrenheit: ";
+    std::cin >> tempF;
+    std::cout << tempF << " En celcius equivale: " << fahrenheitACelsius(tempF) << "grados celsius";
     return 0;
 }
