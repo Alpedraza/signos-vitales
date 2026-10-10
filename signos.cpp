@@ -1,17 +1,11 @@
 #include <iostream>
-Temperatura
+#include <string>
 
-double fahrenheitACelsius(double f) {
+double fahrenheitACelsius(double f) 
+{
     return (f - 32.0) * 5.0 / 9.0;
 }
 
-int main() {
-    double tempF;
-    std::cout << "Ingresa la temperatura en Fahrenheit: ";
-    std::cin >> tempF;
-    std::cout << tempF << " En celcius equivale: " << fahrenheitACelsius(tempF) << "grados celsius";
-=======
-#include <string>
 std::string clasificarFrecuencia(int lpm) {
     if (lpm < 60) {
         return "bradicardia";
@@ -20,13 +14,16 @@ std::string clasificarFrecuencia(int lpm) {
     } else {
         return "taquicardia";
     }
-}
+} 
+
 int main() {
-    int latidos;
+    double tempF;
+    std::cout << "Ingresa la temperatura en Fahrenheit: ";
+    std::cin >> tempF;
+    std::cout << tempF << " en celcius equivale: " << fahrenheitACelsius(tempF) << " grados celsius" << std::endl;
+int latidos;
     std::cout << "Ingrese la frecuencia cardíaca en lpm: ";
     std::cin >> latidos;
     std::cout << "La frecuencia de " << latidos << " lpm es: " << clasificarFrecuencia(latidos) << std::endl;
-    
- main
-    return 0;
+
 }
