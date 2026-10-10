@@ -5,5 +5,7 @@ double fahrenheitACelsius(double f) {
 }
 
 int main() {
+    double tempF = 98.6;
+    std::cout << tempF << " °F equivale a " << fahrenheitACelsius(tempF) << " °C\n";
     return 0;
 }
